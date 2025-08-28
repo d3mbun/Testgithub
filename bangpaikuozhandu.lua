@@ -53,7 +53,7 @@ function x100008_OnDeplete( sceneId, selfId )
 
 	local guildid = GetHumanGuildID(sceneId, selfId)
 	if guildid == -1 then
-		x100008_ShowNotice( sceneId, selfId, "Äú»¹Ã»ÓĞ¼ÓÈë°ïÅÉ£¬ÔİÊ±²»ÄÜÊ¹ÓÃ¡£" )
+		x100008_ShowNotice( sceneId, selfId, "Các hÕ chßa gia nh§p bang hµi, tÕm th¶i không th¬ sØ døng." )
 		return 1
 	end
 
@@ -75,14 +75,14 @@ end
 function x100008_OnActivateOnce( sceneId, selfId )
 	local guildid = GetHumanGuildID(sceneId, selfId)
 	if guildid == -1 then
-		x100008_ShowNotice( sceneId, selfId, "Äú»¹Ã»ÓĞ¼ÓÈë°ïÅÉ£¬ÔİÊ±²»ÄÜÊ¹ÓÃ¡£" )
+		x100008_ShowNotice( sceneId, selfId, "Các hÕ chßa gia nh§p bang hµi, tÕm th¶i không th¬ sØ døng." )
 		return 1
 	end
 	
 	
 	CityChangeAttr( sceneId, selfId, GUILD_AMBI_LEVEL, 200 )
 	BeginEvent(sceneId)
-       x100008_ShowNotice( sceneId, selfId, "¹§Ï²Äú³É¹¦Ê¹ÓÃ°ïÅÉÀ©ÕÅ¶ÈÔö¼Ó¾í£¬³É¹¦ÌáÉıÀ©ÕÅ¶È200µã¡£" )
+       x100008_ShowNotice( sceneId, selfId, "Chúc m×ng bang hµi các hÕ ğã tång ğµ Khuªch trß½ng 200 ği¬m." )
 	return 1;
 end
 
